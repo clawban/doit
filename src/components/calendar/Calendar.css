@@ -1,0 +1,35 @@
+.calendar-block{
+    margin-bottom: 30px
+}
+.calendar-block .column{
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #CCC;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0
+}
+    .calendar-block .column:first-child{
+            border-left: 0;
+            margin-left: 15px
+    }
+    .calendar-block .column:last-child{
+            border-right: 0
+    }
+
+.calendar-block .column .list{
+    display: block;
+    padding: 10px
+}
+    .calendar-block .column .list.active,
+    .calendar-block .column .list.active strong{
+        background-color: #da6667;
+        color: #FFF;
+        border-radius: 5px
+    }
+    .calendar-block .columns{
+        overflow-y: scroll;
+        padding-bottom: 30px        
+    }
+        .calendar-block .column{
+            min-width: 150px
+        }
